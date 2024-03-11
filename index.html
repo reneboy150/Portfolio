@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reneboy Canoy | Portfolio</title>
+    <link rel="stylesheet" href="projects/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="always-container">
+
+        <!--Header-->
+        <header class="header-panel">
+            <div class="header-menus">
+                <div class="home">
+                    <button id="homebtnID" class="button-home clicked">Home</button>
+                </div>
+                <div class="menus">
+                  <button id="aboutbtnID" class="about-button clicked">About</button>
+                  <button id="skillsbtnID" class="skills-button clicked">Skills</button>
+                  <button id="contactbtnID" class="contact-button clicked">Contact</button>
+                  <button id="helpbtnID" class="help-button clicked">Help</button>
+                </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class="fas fa-bars fa-2x hamburger clicked" id="toggleButton" onclick="toggleMenu()"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="navigation-menu-mobile">
+            <div class="nav-buttons">
+                <button class="mobile-about-button clicked"><u>About</u></button>
+                <button class="mobile-skills-button clicked"><u>Skills</u></button>
+                <button class="mobile-contact-button clicked"><u>Contact</u></button>
+                <button class="mobile-help-button clicked"><u>Help</u></button>
+            </div>
+        </div>
+        
+        <!--Home Panel-->
+        <div class="home-main">
+            <div class="introduction-panel ">
+                <h1 class="introduction-text expand-first">
+                <small>Hello</small>, <br>I'm <u>Reneboy Canoy</u>,<br>
+                A Computer Engineering 
+                </h1>
+                <p class="expand-second">
+                    I like making fun, interactive things with code. 
+                    I'm also a front-end developer.
+                </p>    
+                
+                <button class="download-info expand-first" onclick="downloadFile()">
+                    Download Info
+                </button>
+             </div>
+
+            <img class="profile-pic expand-third" src="projects/assets/images/reneboy.png" type="image">
+        </div>
+
+        <div class="about-main">
+            <img class="about-picture expand-first" src="projects/assets/images/about-pic.png">
+               
+            <div class="about-info-panel">
+                <h class="about-title expand-first"><b>About me</b></h>
+                <p class="about-info expand-second">
+                Hello there,
+                I'm Rene Boy, and I'm delighted to welcome you to my corner of the internet. 
+                Here's a little glimpse into who I am and what drives me.
+                Who Am I?
+                I'm a Computer Engineering Student in CITE Technical Institute, Inc.
+                From a young age, I've been captivated by Computer games, and other technological 
+                stuff, and my journey in this field has been nothing short of exhilarating.
+                With great interest in the field, I've honed my skills and developed deep understanding of Coding/Programming. What I Stand For
+                Beyond the professional realm, I'm a firm believer in the Catholic faith.
+                Everywhere I go, these principles guides me in both my personal and professional life. Life Beyond Work
+                When I'm not doing my work, you can find me playing online games and basketball.
+                These pursuits add a colorful dimension to my life and keep my creativity flowing.
+                I am thrilled to share my journey with you and eager to learn from yours. Let's 
+                connect, 
+                exchange ideas, and build a community where we can inspire and support each other.
+                </p> 
+            </div>     
+        </div>
+
+        <div class="skills-main">
+            <div class="skill-tle-panel">
+                <h class="title-skill expand-first">Skills</h>
+                <p>
+
+                </p>
+            </div>
+
+            <div class="skills-container">
+                <div class="first-skill expand-first">
+                    <h class="titles-in-skills">Hardware Expertise</h>
+                    <p class="sentence-in-skills">
+                    -Proficient in diagnosing and resolving hardware issues,
+                    upgrading components, and designing custom computer systems
+                    to optimize performance and efficiency.
+                    </p>
+                </div>
+
+                <div class="second-skill expand-second">
+                    <h class="titles-in-skills">Software Development</h>
+                    <p class="sentence-in-skills">
+                        -Experienced in developing software solutions using
+                        various programming languages and frameworks, with
+                        a focus on creating intuitive user interfaces and
+                        robust backend systems.
+                    </p>
+                </div>
+                <div class="third-skill expand-third">
+                    <h class="titles-in-skills">Technical Problem-Solving</h>
+                    <p class="sentence-in-skills">
+                    -Skilled in analyzing complex technical problems, identifying
+                    root causes, and implementing effective solutions to ensure
+                    systems run smoothly and efficiently.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="contact-main">
+            <div class="contact-tle-panel">
+                <h class="title-skill expand-first">Contact Me</h>
+            </div>
+
+            <div class="bottom-contact-panel">
+                <div class="contact-info-panel">
+                    <h class="contact-information expand-third">
+                        <br>reneboycanoy@gmail.com<br>
+                    </h>
+                    <h class="contact-information expand-second">
+                        <br>09178361712<br>
+                    </h>
+                    <a class="contact-information expand-first" href="https://www.facebook.com/jrdelacruz32145?mibextid=ZbWKwL" target="_blank">
+                        <br>Fb: Reneboy Canoy<br>
+                    </a>                    
+                </div>
+
+                <div class="contact-textfields">
+                        <input class="input expand-first" type="text" placeholder="Your Name">
+                        <input class="input expand-second" type="email" placeholder="Your Email">
+                        <textarea class="textarea expand-third" placeholder="Your Message Request"></textarea>   
+                </div>                
+            </div>
+        </div>
+        
+        <div class="help-main">
+    <div class="help-title-panel">
+        <h class="help-title expand-first">Help</h>
+    </div>
+    <div class="instructions-panel">
+        <p class="instruction-info expand-second">
+            <b>How to Use This Website:</b><br><br>
+
+            1. <u class="expand-third">Home Section:</u><br>
+            - Click on the "Home" button in the navigation bar to go to the Home section.<br>
+            - The Home section provides a brief introduction to the user, highlighting the name and role of the individual (in this case, Reneboy Canoy, a college student). It also includes a short description of Reneboy's passion for programming and problem-solving.<br><br>
+
+            2. <u class="expand-third">About Section:</u><br>
+            - Click on the "About" button in the navigation bar to navigate to the About section.<br>
+            - The About section includes a picture of Reneboy and a detailed description of his background, skills, and interests.<br><br>
+
+            3. <u class="expand-third">Skills Section:</u><br>
+            - Click on the "Skills" button in the navigation bar to navigate to the Skills section.<br>
+            - The Skills section lists Reneboy's skills, including "Hardware Expertise," "Software Development," and "Technical Problem-Solving," each with a brief description.<br><br>
+
+            4. <u class="expand-third">Contact Section:</u><br>
+            - Click on the "Contact" button in the navigation bar to navigate to the Contact section.<br>
+            - The Contact section includes contact information (email and phone number) for Reneboy, as well as a form for users to send him a message.<br><br>
+
+            5. <u class="expand-third">Help Section:</u><br>
+            - The Help section provides additional information and resources for using the website.<br><br>
+
+            <b class="expand-third">Mobile Navigation:</b><br>
+            - The website includes a mobile navigation menu accessible by clicking on the hamburger icon in the top right corner (represented by three horizontal lines).<br>
+            - Clicking on the hamburger icon toggles the display of the mobile navigation menu, which includes links to the same sections as the desktop navigation bar.<br><br>
+
+            We hope you enjoy exploring Reneboy Canoy's portfolio website! If you have any questions or need further assistance, feel free to contact us.<br><br>
+        </p>
+    </div>
+</div>
+
+    </div>
+
+    <script src="projects/assets/js/script.js"></script>
+</body>
+</html>

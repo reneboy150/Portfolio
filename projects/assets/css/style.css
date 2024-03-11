@@ -1,0 +1,779 @@
+
+.always-container {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(36, 35, 35);
+    overflow-x: hidden;
+}
+
+.clicked {
+    color: #ffffff; /* Set the shining effect color to white */
+    text-shadow: 0 0 5px #ffffff, 0 0 20px #ffffff, 0 0 0px #ffffff;
+}
+
+/*Animations*/
+.expand-first {
+    animation: expand 0.5s forwards;
+}
+
+.expand-second {
+   animation: expand 0.7s forwards;
+}
+
+.expand-third {
+    animation: expand 1s forwards;
+  }
+  
+  @keyframes expand {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+
+/*------------------------Header---------------------------*/
+.header-panel {
+    position: fixed;
+    width: 100%;
+    height: 5%;
+    background-color: rgba(250, 250, 250, 0.5);
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    z-index: 100;
+}
+/*left part*/
+.home {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    width: 7%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+
+    display: flex;
+    justify-self: center;
+    align-items: center;
+}
+/*Left items*/
+.button-home {
+    width: 70%;
+    height: 50%;
+    margin-left: 10%;
+    cursor: pointer;
+
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    outline: none;
+}
+
+/*right part*/
+.menus {
+   position: absolute;
+   background-color: rgba(0, 0, 0, 0);
+   width: 60%;
+   height: 100%;
+   top: 0%;
+   left: 40%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+/*right items*/
+.about-button,
+.skills-button,
+.contact-button,
+.help-button{
+    width: 10%;
+    height: 50%;
+    margin-left: 10%;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0);
+    border: rgba(0, 0, 0, 0);
+    color: rgb(255, 255, 255);
+    outline: none;
+}
+
+.button-home:hover,
+.about-button:hover,
+.skills-button:hover,
+.contact-button:hover,
+.help-button:hover,
+.buttons-menu:hover {
+    text-decoration: none; /* Remove default underline */
+}
+
+@keyframes underline {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.button-home:hover::after,
+.about-button:hover::after,
+.skills-button:hover::after,
+.contact-button:hover::after,
+.help-button:hover::after,
+.buttons-menu:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 1px solid;
+    animation: underline 0.3s forwards; /* Animate the underline */
+}
+/*nav toggle*/
+.nav__toggle {
+    position: absolute;
+    width: auto;
+    height: 100%;
+    top: 0%;
+    left: 90%;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 100;
+
+    display: none;
+    
+   justify-content: center;
+   align-items: center;
+   margin-right: 5%;
+  }
+
+  .hamburger {
+    cursor: pointer;
+    z-index: 100;
+    outline: none;
+}
+
+/*nav-toggle-mobile*/
+.navigation-menu-mobile {
+    position: absolute;
+    z-index: 100;
+    width: 70%;
+    height: 95%;
+    top: 5%;
+    right: 0;
+    background-color: rgb(250, 250, 250, 0.5);
+    transform: translateX(100%); /* Move menu off-screen initially */
+    transition: transform 0.2s ease;
+
+    display: none
+}
+
+.nav-buttons {
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-wrap: wrap;
+   width: 40%;
+   height: 50%;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.mobile-about-button,
+.mobile-skills-button,
+.mobile-contact-button,
+.mobile-help-button{
+    width: 300px;
+    height: 7%;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+} 
+@media only screen and (max-width: 965px) {
+    .nav__toggle {
+        display: flex;
+    }
+    .navigation-menu-mobile {
+        display: block !important;
+    }
+
+    .menus {
+        display: none;
+    }
+}
+/*---------------------------------------------------------*/
+/*-------------------------Home Part-----------------------*/
+.home-main {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;  
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.7%;
+
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Align items to the left */
+    align-items: center; /* Center the item vertically */
+    flex-wrap: wrap;
+}
+
+/*Right Side*/
+.profile-pic {
+    position: relative;
+    width: 30%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*Left Side*/
+.introduction-panel {
+    margin-top: 10%;
+    margin-left: 5%;
+    width: 25%;
+    height: 50%;
+    margin-left: 5%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-right: 10vh;
+}
+/*Left Items*/
+.introduction-text {
+    font-family: Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.download-info {
+    width: 40%;
+    height: 10%;
+    margin-top: 5%;
+    border: 1px solid rgb(255, 255, 255);
+    color: rgb(255, 255, 255);
+    border-radius: 2.5%;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+.download-info:hover {
+    transform: translateY(-20%); /* Move the element upward by 5% when hovered over */
+    transition: transform 0.3s ease; /* Transition the transform property with a duration of 0.3s */
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border: 1px solid rgb(0, 0, 0);
+}
+
+
+p {
+    font-family: Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+@media only screen and (max-width: 965px) {
+  /*Home part*/
+.introduction-panel {
+  margin-top: 10%;
+  width: 80%;
+  height: 30%;
+}
+
+.profile-panel {
+  margin-bottom: 40%;
+}
+
+.profile-pic {
+  width: 50%;
+  height: auto;
+  margin-bottom: 10vh;
+}
+
+.introduction-text {
+  font-size: 20px;
+}
+
+p {
+  font-size: 10px;
+}
+
+.download-info {
+  width: 40%;
+  height: 15%;
+  height: 15%;
+  font-size: 10px;
+}
+
+}
+
+/*----------------------About Main--------------------------------*/
+.about-main {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;
+    background-color: rgb(0, 0, 0);
+    border-radius: 20px;
+
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Align items to the left */
+    align-items: center; /* Center the item vertically */
+    flex-wrap: nowrap;
+    display: none;
+}
+
+/*Left pic*/
+.about-picture {
+    position: relative;
+    width: auto;
+    height: 70%;
+    margin-left: 3vh;
+    margin-top: 2vh;
+    border-radius: 20px;
+    
+    /*Design style*/
+    background-position: -100px 0; /* Move the background 20px to the right */
+    border-top: 10px solid rgb(255, 255, 255); /* Add top border */
+    border-left: 10px solid rgb(255, 255, 255); /* Add right border */
+  } 
+  
+  
+  /*Right Panel*/
+  .about-info-panel {
+    position: relative;
+    width: 60%;
+    height: 70%;
+    margin-left: 5%;
+    border-radius: 20px;
+    margin-right: 5vh;
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .about-title {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 5vh;
+    margin-top: 5vh;
+    margin-left: 2vh;
+    color: rgb(0, 0, 0);
+    text-decoration: underline;
+  }
+  
+  .about-info {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    border-radius: 20px;
+    font-size: 2vh;
+    color: rgb(0, 0, 0);
+  }
+
+
+  
+    @media only screen and (max-width: 1079px){
+      .about-picture {
+        height: 50%;
+     }
+   
+     .about-info-panel {
+       margin-top: 2vh;
+       width: 90%;
+       height: 90%;
+     }
+  
+     .about-title {
+      font-size: 30px;
+     }
+   
+     .about-info {
+       font-size: 1.7vh;    
+     }
+}
+
+@media only screen and (max-width: 720px){
+    .about-main {
+        flex-wrap: wrap;
+    }
+    .about-picture {
+        margin-top: 2vh;
+        margin-right: 5vh;
+        height: 30%;
+     }
+
+     .about-info-panel {
+        width: 90%;
+        height: 60%;
+        margin-right: 2vh;
+      }
+
+      .about-info {
+        font-size: 1.3vh;    
+      }
+
+}
+
+/*-------------------------Skills Part-----------------------*/
+.skills-main {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;  
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.7%;
+
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+
+    display: none;
+}
+/*top panel*/
+.skill-tle-panel {
+    position: relative;
+    width: 90%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0);
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.title-skill {
+    text-decoration: underline;
+     font-size: 40px;
+     font-weight: bold;
+     font-family: Geneva, Verdana, sans-serif;
+     color: rgb(255, 255, 255);
+}
+
+/*bottom panel*/
+.skills-container {
+    background-color: rgb(36, 35, 35);
+    width: 90%;
+    height: 80%;
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    border-radius: 20px;
+}
+
+.first-skill,
+.second-skill,
+.third-skill {
+  position: relative;
+  background-color: rgb(0, 0, 0);
+  width: 25%;
+  height: 70%;
+  border-radius: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.second-skill,
+.third-skill {
+    margin-left: 10%;
+}
+
+/*its parts*/
+
+.titles-in-skills {
+    margin-top: 20%;
+    text-decoration: underline;
+    font-size: 30px;
+    color: rgb(206, 104, 9);
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+.sentence-in-skills {
+    text-align: center;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    font-family: Geneva, Verdana, sans-serif;
+}
+
+
+
+@media only screen and (max-width: 965px) {
+
+    .titles-in-skills {
+        margin-top: 5%;
+        font-size: 25px;
+    }
+
+    .sentence-in-skills {
+        font-size: 15px;
+    }
+
+.first-skill,
+.second-skill,
+.third-skill {
+  margin-top: 0%;
+  margin-left: 0%;
+ width: 90%;
+ height: 30%;
+}
+
+}
+
+@media only screen and (max-width: 365px) {
+
+    .titles-in-skills {
+        margin-top: 5%;
+        font-size: 20px;
+    }
+
+.sentence-in-skills {
+    font-size: 12px;
+}
+}
+/*----------------------------Contact----------------------------------*/
+.contact-main {
+    width: 95%;
+    height: 95%;
+    top: 2.5%;
+    left: 2.5%;  
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.7%;
+
+    position: absolute;
+    display: flex;
+    justify-content: center; /* Align items to the left */
+    align-items: center; /* Center the item vertically */
+    flex-wrap: wrap; 
+
+    display: none;
+}
+
+/*top panel*/
+.contact-tle-panel {
+    position: relative;
+    width: 90%;
+    height: 10%;
+    background-color: rgba(0, 0, 0, 0);
+
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.title-contact {
+     font-size: 40px;
+     font-weight: bold;
+     font-family: Geneva, Verdana, sans-serif;
+     color: rgb(255, 255, 255);
+     text-decoration: underline;
+     
+}
+
+/*bottom main panel*/
+.bottom-contact-panel {
+
+   position: relative;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 90%;
+   height: 70%;
+   background-color: rgb(97, 97, 97);
+   border-radius: 20px;
+}
+
+/*bottom left panel*/
+.contact-info-panel {
+    background-color: rgba(0, 0, 0, 0);
+    width: 30%;
+    height: 60%;
+    margin-left: 2.5%;
+   
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-information {
+    font-size: 3vh;
+    font-family: Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/*bottom right panel*/
+.contact-textfields  {
+    width: 40%;
+    height: 60%;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 10%;
+}
+
+.input {
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 90%;
+    height: 40px;
+    border: 1px solid black;
+}
+
+textarea {
+    margin-left: 5%;
+    margin-top: 10%;
+    width: 90%;
+    height: 100px; /* Adjust the height as needed */
+    border: 1px solid black;
+}
+
+@media only screen and (max-width: 865px) {
+
+    .contact-info-panel {
+        position: absolute;
+        top: 5%;
+        width: 15%;
+        height: 30%;
+    }
+
+    .contact-information {
+        font-size: 2vh;
+    }
+
+    .contact-textfields  {
+        margin-top: 3%;
+        margin-left: 0%;
+        width: 80%;
+        height: 30%;
+    }
+
+    textarea {
+        margin-left: 5%;
+        margin-bottom: 20vh;
+        width: 90%;
+        height: 100px; /* Adjust the height as needed */
+        border: 1px solid black;
+    }
+
+}
+
+/*---------------Help-Panel------------------*/
+.help-main {
+    margin-top: 2.5%;
+    margin-left: 2.5%;
+    width: 95%;
+    height: 95%; 
+    background-color: rgb(0, 0, 0);
+    border-radius: 0.7%;
+
+    position: absolute;
+    display: flex;
+    flex-direction: column; /* Display items in a single column */
+    justify-content: flex-start; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    display: none;
+}
+
+
+/*top panel*/
+.help-title-panel {
+  position: relative;
+  width: 90%;
+  background-color: rgba(0, 0, 0, 0);
+  margin-top: 3%;
+    
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.help-title {
+  text-decoration: underline;
+  width: 80%;
+    text-decoration: underlined;
+    font-size: 40px;
+    color: rgb(206, 104, 9);
+    font-family: Geneva, Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    margin-bottom: 2%;
+}
+
+/*bottom panel*/
+.instructions-panel {
+  position: relative;
+  width: 90%;
+  height: 80%;
+  background-color: rgb(97, 97, 97);
+ border-radius: 10px;
+ margin-bottom: 1vh;
+}
+
+.instruction-info {
+   margin-left: 2vh;
+   font-family: Geneva, Verdana, sans-serif;
+   font-size: 1.7vh;
+}
+
+@media only screen and (max-width: 785px) {
+    .instruction-info {
+        font-size: 1.3vh;
+     }
+
+     .help-title-panel {
+        margin-top: 5vh;
+    }
+
+     .instructions-panel {
+        margin-top: 5%;
+        width: 90%;
+        height: 90%;
+      }
+}
+@media only screen and (max-width: 390px) {
+  .instructions-panel {
+    margin-top: 5%;
+    width: 90%;
+    height: 90%;
+  }
+  .instruction-info {
+    font-size: 64%;
+ }
+}
+/*Always Container effect*/
+.always-container {
+    background-color: rgb(36, 35, 35);
+    overflow: hidden;
+    z-index: 0;
+  }
+  
+  .always-container.open {
+    background: linear-gradient(90deg, rgba(255,255,0,0) 0%, rgb(0, 0, 0) 50%, rgba(255,255,0,0) 100%);
+    background-size: 200% 100%;
+    animation: slide 4s linear infinite;
+  }
+  
+  @keyframes slide {
+    0% {
+      background-position: -100% 0;
+    }
+    50% {
+      background-position: 100% 0;
+      opacity: 1;
+    }
+  }
+  

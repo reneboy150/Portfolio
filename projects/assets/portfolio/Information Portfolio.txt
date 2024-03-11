@@ -1,0 +1,81 @@
+Introduction
+
+Hello,
+I'm Reneboy Canoy,
+A Computer Engineering
+
+-I like making fun, interactive things with code. I'm also a front-end developer.
+
+About me
+-Hello there, I'm Rene Boy, and I'm delighted 
+to welcome you to my corner of the internet. 
+Here's a little glimpse into who I am and what 
+drives me. Who Am I? I'm a Computer Engineering 
+Student in CITE Technical Institute, Inc. From a 
+young age, I've been captivated by Computer games, 
+and other technological stuff, and my journey in 
+this field has been nothing short of exhilarating. 
+With great interest in the field, I've honed my skills 
+and developed deep understanding of Coding/Programming. 
+What I Stand For Beyond the professional realm, I'm a 
+firm believer in the Catholic faith. Everywhere I go, 
+these principles guides me in both my personal and 
+professional life. Life Beyond Work When I'm not doing 
+my work, you can find me playing online games and 
+basketball. These pursuits add a colorful dimension 
+to my life and keep my creativity flowing. I am thrilled 
+to share my journey with you and eager to learn from 
+yours. Let's connect, exchange ideas, and build a community 
+where we can inspire and support each other.
+
+Skills
+Hardware Expertise
+-Proficient in diagnosing and resolving hardware issues, 
+upgrading components, and designing custom computer systems 
+to optimize performance and efficiency.
+
+Software Development
+-Experienced in developing software solutions using various 
+programming languages and frameworks, with a focus on creating 
+intuitive user interfaces and robust backend systems.
+
+Technical Problem-Solving
+-Skilled in analyzing complex technical problems, identifying 
+root causes, and implementing effective solutions to ensure 
+systems run smoothly and efficiently.
+
+Contact Me
+
+reneboycanoy@gmail.com
+
+09178361712
+
+Fb: Reneboy Canoy
+
+Help
+How to Use This Website:
+
+1. Home Section:
+- Click on the "Home" button in the navigation bar to go to the Home section.
+- The Home section provides a brief introduction to the user, highlighting the name and role of the individual (in this case, Reneboy Canoy, a college student). It also includes a short description of Reneboy's passion for programming and problem-solving.
+
+2. About Section:
+- Click on the "About" button in the navigation bar to navigate to the About section.
+- The About section includes a picture of Reneboy and a detailed description of his background, skills, and interests.
+
+3. Skills Section:
+- Click on the "Skills" button in the navigation bar to navigate to the Skills section.
+- The Skills section lists Reneboy's skills, including "Hardware Expertise," "Software Development," and "Technical Problem-Solving," each with a brief description.
+
+4. Contact Section:
+- Click on the "Contact" button in the navigation bar to navigate to the Contact section.
+- The Contact section includes contact information (email and phone number) for Reneboy, as well as a form for users to send him a message.
+
+5. Help Section:
+- The Help section provides additional information and resources for using the website.
+
+Mobile Navigation:
+- The website includes a mobile navigation menu accessible by clicking on the hamburger icon in the top right corner (represented by three horizontal lines).
+- Clicking on the hamburger icon toggles the display of the mobile navigation menu, which includes links to the same sections as the desktop navigation bar.
+
+We hope you enjoy exploring Reneboy Canoy's portfolio website! If you have any questions or need further assistance, feel free to contact us.

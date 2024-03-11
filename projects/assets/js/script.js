@@ -139,9 +139,9 @@ function downloadFile() {
     // Create an <a> element
     var link = document.createElement('a');
     // Set the href attribute to the file path
-    link.href = 'projects/assets/portfolio/Information-Portfolio.txt';
+    link.href = 'https://raw.githubusercontent.com/reneboy150/Portfolio/main/projects/assets/portfolio/Information%20Portfolio.txt';
     // Set the download attribute to force download
-    link.download = 'Information-Panel.txt';
+    link.setAttribute('download', 'Information Portfolio.txt');
     // Append the <a> element to the document
     document.body.appendChild(link);
     // Trigger the click event of the <a> element

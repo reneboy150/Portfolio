@@ -116,7 +116,7 @@ function runOnce() {
 window.onload = runOnce;
 
 
-/*-----------------------------------*/
+/*------------------Animation-----------------*/
 
 const homeBtn = document.getElementById('homebtnID');
 const alwaysContainer = document.querySelector('.always-container');
@@ -131,3 +131,21 @@ homeBtn.addEventListener('click', function() {
   }
   isOpen = !isOpen;
 });
+
+
+/*-----------------Download the info------------------*/
+
+function downloadFile() {
+    // Create an <a> element
+    var link = document.createElement('a');
+    // Set the href attribute to the file path
+    link.href = 'projects/assets/portfolio/Information-Portfolio.txt';
+    // Set the download attribute to force download
+    link.download = 'Information-Panel.txt';
+    // Append the <a> element to the document
+    document.body.appendChild(link);
+    // Trigger the click event of the <a> element
+    link.click();
+    // Remove the <a> element from the document
+    document.body.removeChild(link);
+}

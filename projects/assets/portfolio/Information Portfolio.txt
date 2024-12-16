@@ -4,7 +4,7 @@ Hello,
 I'm Reneboy Canoy,
 A Computer Engineering
 
--I like making fun, interactive things with code. I'm also a front-end developer.
+-I like making fun, interactive things with code. I'm also a front-end/back-end developer.
 
 About me
 -Hello there, I'm Rene Boy, and I'm delighted 

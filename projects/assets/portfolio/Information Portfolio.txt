@@ -89,4 +89,4 @@ Mobile Navigation:
 - The website includes a mobile navigation menu accessible by clicking on the hamburger icon in the top right corner (represented by three horizontal lines).
 - Clicking on the hamburger icon toggles the display of the mobile navigation menu, which includes links to the same sections as the desktop navigation bar.
 
-We hope you enjoy exploring Reneboy Canoy's portfolio website! If you have any questions or need further assistance, feel free to contact us.
+We hope you enjoy exploring Reneboy's portfolio website! If you have any questions or need further assistance, feel free to contact us.
